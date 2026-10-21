@@ -10,4 +10,5 @@
  height: 40px;
  flex-shrink: 0;
  border: solid black 0.5px;
+ box-sizing: border-box;
 }
