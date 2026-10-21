@@ -6,4 +6,9 @@ for (let i=0; i<256; i++) {
 }
 
 const allDivs = container.querySelectorAll('div');
+  for (const div of allDivs) {
+   div.addEventListener('mouseover', () => {
+     div.style.backgroundColor = 'black';
+   })
+  }
  
