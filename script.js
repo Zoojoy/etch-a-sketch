@@ -20,8 +20,19 @@ const buttonContainer = document.createElement('div');
        const size = document.createElement('input');
           size.placeholder = 'Set Size 1-100';
        const resizeButton = document.createElement('button');
-          resizeButton.textContent = 'Resize';
-               buttonContainer.append(size, resizeButton);
+          resizeButton.textContent = 'Resize';            
+       const clearPadButton = document.createElement('button');
+          clearPadButton.textContent = 'Clear Pad'; 
+            clearPadButton.addEventListener('click', () => {
+               const allDivs = container.querySelectorAll('div');
+                for (const div of allDivs) {
+                  div.style.backgroundColor = 'white';
+                }
+       const rainbowButton = document.createElement('button');
+                rainbowButton.textContent = 'Rainbow';
+                
+            })       
+buttonContainer.append(size, resizeButton, clearPadButton);
 
 resizeButton.addEventListener ('click', () => {
          const amount = Number(size.value) ;
@@ -33,7 +44,7 @@ resizeButton.addEventListener ('click', () => {
                   alert('enter new value');
                } else if ( amount <=100 && amount >=1) {
                   container.replaceChildren();
-                   for (let i=0; i<totalSquares; i++) {
+                   for (let i=0; i<=totalSquares; i++) {
                      console.log(container.children.length);
                      const content = document.createElement("div");
                         content.style.height = `${squareSize}px`;
