@@ -1,14 +1,82 @@
+body {
+ background-color:rgb(109, 224, 212);
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+}
+
+.pad {
+border: solid #C62828 25px;
+background-color: #C62828;
+border-top-left-radius: 65px;
+border-top-right-radius: 65px;
+border-bottom: 5px solid #C62828;;
+}
+
+.heading {
+ display: flex;
+ justify-content: space-around;
+ width: 650px;
+ font-family: URW Chancery, cursive, sans-serif;
+ color: #F6C945;
+}
+
+.buttons {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 15px;
+ border: solid #C62828 25px ;
+ width: 706px;
+ background-color: #C62828;
+ padding-bottom: 35px;
+ border-bottom-left-radius: 65px;
+ border-bottom-right-radius: 65px;
+}
+.size {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+.modebuttons {
+display: flex;
+justify-content: center;
+gap: 35px;
+}
+
+.modebuttons button {
+ background-color: #F6C945;
+ width: 85px;
+ height: 85px;
+ border-radius: 100%;
+ font-family: 'Times New Roman', Times, serif;
+ font-weight: bold;
+ font-size: 15px;
+}
+.modebuttons button:hover {
+     background-color: #bfafaf;
+     cursor: pointer;
+}
+.modebuttons button.active {
+    background-color: #e9d6d6;
+    color: #C62828;
+    border: 2px solid #581313;
+}
+
 #container {
  display: flex;
  flex-wrap: wrap;
- height: 640px;
- width: 640px;
+ height: 450px;
+ width: 700px;
+ margin: auto;
+ border: solid  rgb(187, 180, 166) 3px;
 }
 
 #container > div {
- width: 40px;
- height: 40px;
+ width: 35px;
+ height: 35px;
  flex-shrink: 0;
  border: solid black 0.5px;
  box-sizing: border-box;
+ background-color: rgb(238, 236, 232);
 }
