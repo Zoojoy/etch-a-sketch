@@ -38,9 +38,10 @@ for (let i=0; i<256; i++) {
 }
       mouseOver();
  
+      const parent = document.querySelector('.pad');
 const buttonContainer = document.createElement('div');
          buttonContainer.classList.add('buttons');
-   document.body.append(buttonContainer);
+   parent.appendChild(buttonContainer);
 const sizeContainer = document.createElement('div');
             sizeContainer.classList.add('size');
          buttonContainer.appendChild(sizeContainer);
